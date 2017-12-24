@@ -3,7 +3,11 @@ CREATE DATABASE chat;
 USE chat;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
+  msg_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  username VARCHAR(50),
+  msg_text VARCHAR(120),
+  room VARCHAR(20) NOT NULL,
+  posted_at DATE
 );
 
 /* Create other tables and define schemas for them here! */
